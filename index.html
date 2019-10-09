@@ -378,6 +378,41 @@ $(function () {
                     
 
                     
+                        
+
+<link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<div class="music-player">
+    
+    <div class="title center-align">
+        <i class="fa fa-music"></i>&nbsp;&nbsp;music
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="aplayer" class="music"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script>
+$(function () {
+    new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: 'false' === 'true',
+        autoplay: 'true' === 'true',
+        theme: '#87adb0',
+        loop: 'all',
+        order: 'list',
+        preload: 'auto',
+        volume: Number('0.6'),
+        listFolded: 'false' === 'true',
+        listMaxHeight: '',
+        audio: JSON.parse('[{"name":"newboy","artist":"盘尼西林","url":"/medias/music/newboy.mp3","cover":"/medias/music/1.jpg"},{"name":"生活因你而火热","artist":"新裤子乐队","url":"/medias/music/2.mp3","cover":"/medias/music/2.jpg"},{"name":"一生所爱","artist":"大话西游","url":"/medias/music/3.mp3","cover":"/medias/music/3.jpg"}]')
+    });
+});
+</script>
+                    
 
                     
 
